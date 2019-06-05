@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Namib Lead & Zinc Mining</title>
+    <link rel="icon" href="./favicon.ico">    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,900" rel="stylesheet">
+      <style>
+          #map {
+            height: 450px;
+            width: 100%;
+           }
+      </style>
+  </head>  
+<body>
+	<div class="header-nav" id="myHeader">
+    	<div class="container">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light">
+              <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="Namib Lead & Zinc Mining" title="Namib Lead & Zinc Mining"/></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li><a class="nav-link" href="about.html">About Us</a></li>
+                  <li><a class="nav-link" href="board.html">Board & Management</a></li>
+                  <li><a class="nav-link" href="operations.html">Operations</a></li>
+                  <li><a class="nav-link" href="ownership.html">Ownership</a></li>
+                  <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+                  <li><a class="nav-link" href="recruitment.html">Recruitment</a></li>
+                  <li><a class="nav-link" href="tenders.html">Tenders</a></li>
+                <li class="active"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+	</div>
+    <div class="container-fluid head-image-container"></div>
+    <div class="container max-width-910">
+        <div class="main-hd">
+            <h1>Contact Us</h1>
+            <hr class="blue-line">
+        </div>
+    </div>      
+    <div class="board pb-4">
+    	<div class="container max-width-910">
+            <form name="contactForm" id="contactForm" method="post">
+                <div class="row pt-4">
+                    <div class="col-sm-12 col-sm-4 col-md-4 col-lg-4 px-1 pt-1 form-field">
+                        <input name="contactName" type="text" id="contactName" placeholder="   Your Name" value="" minlength="2" required="" style="width: 100%; height: 40px">
+                    </div>
+                    <div class="col-sm-12 col-sm-4 col-md-4 col-lg-4 px-1 pt-1 form-field">
+                        <input name="contactEmail" type="email" id="contactEmail" placeholder="   Email" value="" required="" style="width: 100%; height: 40px">
+                    </div>               
+                    <div class="col-sm-12 col-sm-4 col-md-4 col-lg-4 px-1 pt-1 form-field">
+                        <input name="contactSubject" type="text" id="contactSubject" placeholder="   Phone" value="" style="width: 100%; height: 40px">
+                    </div>
+                </div>
+                <div class="row pt-4">
+                    <div class="col-sm-12 col-sm-12 col-md-12 col-lg-12 px-1 form-field">
+                        <textarea name="contactMessage" id="contactMessage" placeholder="   Message" rows="10" cols="50" required="" style="width: 100%"></textarea>
+                    </div> 
+                </div>
+                <div class="row pt-4 justify-content-center">
+                   <div class="contact form-field">
+                      <button class="mx-3 submitform btn btn-primary">SUBMIT</button>
+                      <div id="submit-loader">
+                      </div>
+                   </div>
+                </div>
+            </form> 
+            <!-- end form -->
+        </div>
+    </div>
+    
+    <div>
+        <div id="map"></div>
+        <script>
+			function initMap() {
+			var nlzm = {lat: -22.677071, lng: 14.531560};
+			var map = new google.maps.Map(
+			document.getElementById('map'), {zoom: 14, center: nlzm});
+			var marker = new google.maps.Marker({position: nlzm, map: map});
+			}
+        </script>
+		
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKqV6LIp8zt_UG8Nzhzweh3MVEycyHX8g&callback=initMap"
+		async defer></script>
+    </div>
+         
+	<div class="footer mt-0">
+    	<div class="container max-width-910">
+            <div class="row">
+                <div class="col-sm-12 col-sm-4 col-md-4 col-lg-4">
+                    <figure class="f-logo"><a href="index.html"><img src="images/logo-footer.svg" alt="Namib Lead & Zinc Mining" title="Namib Lead & Zinc Mining"/></a></figure>
+                    <figure class="f-logo1"><a href="#"><img src="images/north-river.svg" alt="North River RESOURCES" title="North River RESOURCES"/></a></figure>
+                </div>                
+                <div class="col">
+                    <div class="fnav">
+                        <h5>OVERVIEW</h5>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="board.html">Board & Management</a></li>
+                            <li><a href="operations.html">Operations</a></li>
+                            <li><a href="ownership.html">Ownership</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="recruitment.html">Recruitment</a></li>
+                            <li><a href="tenders.html">Tenders</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>                
+                <div class="col">
+                    <div class="fnav">
+                        <h5>ARCHIVE</h5>
+                        <ul>
+                            <li><a href="http://www.northriverresources.com/news.aspx" target="_blank">News</a></li>
+                            <li><a href="http://www.northriverresources.com" target="_blank">Corporate Profile</a></li>
+                            <li><a href="http://www.northriverresources.com/gallery.aspx" target="_blank">Media</a></li>
+                            <li><a href="ownership.html">Shareholder Info</a></li>
+                        </ul>
+                    </div>
+                </div>                
+                <div class="col">
+                    <div class="fnav">
+                        <h5>CONTACT US</h5>
+                            <div class="reach-us"><span>T</span>+264 64 426 250</div>
+                            <div class="reach-us"><span>F</span>+264 64 426 251</div>
+                            <div class="reach-us" style="display: inline-flex"><span>E</span><a href="info@namibleadzinc.com">info@namibleadzinc.com</a></div>
+                            <div class="address">
+                                No. 6 Francois Street<br>
+                                Swakopmund<br>
+                                P.O. Box 7185<br>
+                                Swakopmund<br>
+                                Namibia<br>
+                            </div>
+                    </div>
+                </div>                
+            </div>
+  		</div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+		window.onscroll = function() {myFunction()};		
+		var header = document.getElementById("myHeader");
+		var sticky = header.offsetTop;		
+		function myFunction() {
+		  if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+		  } else {
+			header.classList.remove("sticky");
+		  }
+		}
+	</script>
+    
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+    
+  </body>
+</html>

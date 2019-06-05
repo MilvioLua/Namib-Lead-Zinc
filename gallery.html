@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Namib Lead & Zinc Mining</title>
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+	  
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	  
+	  	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	  
+	  
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,900" rel="stylesheet"> 
+	  
+	  
+	  
+	  <style>
+		  
+		/* The Modal (background) */
+		.modal {
+			display: none; /* Hidden by default */
+			position: fixed; /* Stay in place */
+			z-index: 1; /* Sit on top */
+			padding-top: 100px; /* Location of the box */
+			left: 0;
+			top: 0;
+			width: 100%; /* Full width */
+			height: 100%; /* Full height */
+			overflow: auto; /* Enable scroll if needed */
+			background-color: rgb(0,0,0); /* Fallback color */
+			background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+			z-index: 99999;
+		}
+
+		/* Modal Content (image) */
+		.modal-content {
+			margin: auto;
+			display: block;
+			width: 80%;
+			max-width: 700px;
+		}
+
+		/* Caption of Modal Image */
+		#caption {
+			margin: auto;
+			display: block;
+			width: 80%;
+			max-width: 700px;
+			text-align: center;
+			color: #ccc;
+			padding: 10px 0;
+			height: 150px;
+		}
+
+		/* Add Animation */
+		.modal-content, #caption {    
+			-webkit-animation-name: zoom;
+			-webkit-animation-duration: 0.6s;
+			animation-name: zoom;
+			animation-duration: 0.6s;
+		}
+
+		@-webkit-keyframes zoom {
+			from {-webkit-transform:scale(0)} 
+			to {-webkit-transform:scale(1)}
+		}
+
+		@keyframes zoom {
+			from {transform:scale(0)} 
+			to {transform:scale(1)}
+		}
+
+		/* The Close Button */
+		.close {
+			position: absolute;
+			top: 15px;
+			right: 35px;
+			color: #f1f1f1;
+			font-size: 40px;
+			font-weight: bold;
+			transition: 0.3s;
+			z-index: 999999;
+		}
+
+		.close:hover,
+		.close:focus {
+			color: #bbb;
+			text-decoration: none;
+			cursor: pointer;
+		}
+
+		/* 100% Image Width on Smaller Screens */
+		@media only screen and (max-width: 700px){
+			.modal-content {
+				width: 100%;
+			}
+		}
+		</style>
+  </head>  
+<body>
+	
+	<div class="header-nav" id="myHeader">
+    	<div class="container">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light">
+              <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="Namib Lead & Zinc Mining" title="Namib Lead & Zinc Mining"/></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                                      <li><a class="nav-link" href="about.html">About Us</a></li>
+                  <li><a class="nav-link" href="board.html">Board & Management</a></li>
+                  <li><a class="nav-link" href="operations.html">Operations</a></li>
+                  <li><a class="nav-link" href="ownership.html">Ownership</a></li>
+                  <li class="active"><a class="nav-link" href="gallery.html">Gallery</a></li>
+				  <li><a class="nav-link" href="recruitment.html">Recruitment</a></li>
+				  <li><a class="nav-link" href="tenders.html">Tenders</a></li>
+                <li><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+	</div>
+    
+    <div class="vacancies-main"><a href="recruitment.html"><img src="images/vacancies.svg" alt="VACANCIES"/></a></div>
+    <div class="construction-banner"><a href="construction.html"><img src="images/construction.svg" alt="CONSTRUCTION UPDATE"/></a></div>
+
+
+    <div class="container-fluid head-image-container"></div>
+    
+    <div class="container max-width-910">
+    	<div class="main-hd">
+        	<h1>GALLERY</h1>
+            <hr class="blue-line">
+        </div>
+        <div class="gallery-main">
+			
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+			  <span class="close" onClick="closeModal()">&times;</span>
+			  <img class="modal-content" id="img01"/>
+			  <div id="caption"></div>
+			</div>
+					
+		<div id="fh5co-portfolio-section" style="z-index: 99">
+			<div class="container">
+				<ul id="filters" class="clearfix animate-box">
+					<!--<li><span class="filter active" data-filter=".all">All</span></li>-->
+					<li><span class="filter" data-filter=".gen">General</span></li>
+					<li><span class="filter" data-filter=".gnd">Groundbreaking</span></li>
+					<li><span class="filter" data-filter=".con">Construction</span></li>
+					<li><span class="filter" data-filter=".env">Environment</span></li>
+					<li><span class="filter" data-filter=".app">People</span></li>
+				</ul>
+
+				<div id="portfoliolist" class="animate-box">   
+
+					<div class="portfolio all gen" data-cat="gen">
+						<div class="portfolio-wrapper" onClick="getImage('img1')">				
+							<img id="img1" src="http://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535967443/NamibLeadZinc/Construction/blas.jpg" alt="Blast" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">General</a>
+									<span class="text-category">Blast</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>				
+
+					<div class="portfolio all card gen" data-cat="gen">
+						<div class="portfolio-wrapper" onClick="getImage('img2')">			
+							<img id="img2" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535967401/NamibLeadZinc/Construction/img8.jpg" alt="Vehicle" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">General</a>
+									<span class="text-category">Vehicle</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>		
+
+					<div class="portfolio all con" data-cat="con">
+						<div class="portfolio-wrapper" onClick="getImage('img3')">						
+							<img id="img3" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535967018/NamibLeadZinc/Construction/Final_Product_Building_Full_View.jpg" alt="Product Building Full View" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Construction</a>
+									<span class="text-category">Product Building Full View</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>			
+
+					<div class="portfolio all con" data-cat="con">
+						<div class="portfolio-wrapper" onClick="getImage('img4')">						
+							<img id="img4" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535967017/NamibLeadZinc/Construction/Final_Product_Building_Sheeting_Flashing.jpg" alt="Product Building Sheeting" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Construction</a>
+									<span class="text-category">Product Building Sheeting</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio all con" data-cat="con">
+						<div class="portfolio-wrapper" onClick="getImage('img5')">						
+							<img id="img5" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535967017/NamibLeadZinc/Construction/Final_Product_Building_-_Roofing.jpg" alt="Product Building Roofing" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Construction</a>
+									<span class="text-category">Product Building Roofing</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio all con" data-cat="con">
+						<div class="portfolio-wrapper" onClick="getImage('img6')">						
+							<img id="img6" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535967017/NamibLeadZinc/Construction/Final_Product_Building_Sheeting_Corner_Flashing.jpg" alt="Product Building Sheeting Corner" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Construction</a>
+									<span class="text-category">Product Building Sheeting Corner</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio all con" data-cat="con">
+						<div class="portfolio-wrapper" onClick="getImage('img7')">						
+							<img id="img7" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535966993/NamibLeadZinc/Construction/Covered_pipe_from_400m3_Tank_to_Valve_Chamber_5.jpg" alt="Covered Pipe from Tank to Valve Chamber" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Construction</a>
+									<span class="text-category">Covered Pipe from Tank to Valve Chamber</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio all con" data-cat="con">
+						<div class="portfolio-wrapper" onClick="getImage('img8')">						
+							<img id="img8" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535966991/NamibLeadZinc/Construction/Covered_pipe_from_Valve_Chamber_5_to_Valve_Chamber_4.jpg" alt="Covered Pipe from Tank to Valve Chamber" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Construction</a>
+									<span class="text-category">Covered Pipe from Tank to Valve Chamber</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>	
+					<div class="portfolio all con" data-cat="con">
+						<div class="portfolio-wrapper" onClick="getImage('img9')">						
+							<img id="img9" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535966980/NamibLeadZinc/Construction/Final_Product_Building_Roof_Flashing.jpg" alt="Product Building Roof Flashing" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Construction</a>
+									<span class="text-category">Product Building Roof Flashing</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio all con" data-cat="con">
+						<div class="portfolio-wrapper" onClick="getImage('img10')">						
+							<img id="img10" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535966956/NamibLeadZinc/Construction/Change_House_Flashing_for_Wall_Panels.jpg" alt="Change House Flashing for Wall Panels" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Construction</a>
+									<span class="text-category">Change House Flashing for Wall Panels</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio all con" data-cat="con">
+						<div class="portfolio-wrapper" onClick="getImage('img11')">						
+							<img id="img11" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535966944/NamibLeadZinc/Construction/Covered_pipe_from_Valve_Chamber_5_to_400m3_Tank.jpg" alt="Covered Pipe from Tank to Valve Chamber" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Construction</a>
+									<span class="text-category">Covered Pipe from Tank to Valve Chamber</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio all con" data-cat="con">
+						<div class="portfolio-wrapper" onClick="getImage('img12')">						
+							<img id="img12" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535966720/NamibLeadZinc/Construction/Main_Potable_water_pipeline_Chamber.jpg" alt="Main Portable Water Pipeline Chamber" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Construction</a>
+									<span class="text-category">Main Portable Water Pipeline Chamber</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio all env" data-cat="env">
+						<div class="portfolio-wrapper" onClick="getImage('img13')">			
+							<img id="img13" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535967415/NamibLeadZinc/environment/img7.jpg" alt="Unknown" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Environment</a>
+									<span class="text-category">Unknown</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>	
+					<div class="portfolio all gen env" data-cat="env">
+						<div class="portfolio-wrapper" onClick="getImage('img14')">
+							<img id="img14" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535967274/NamibLeadZinc/environment/img.jpg" alt="Unknown" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Environment</a>
+									<span class="text-category">Unknown</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>			
+					<div class="portfolio all env" data-cat="env">
+						<div class="portfolio-wrapper" onClick="getImage('img15')">			
+							<img id="img15" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535967255/NamibLeadZinc/environment/img2.jpg" alt="Unknown" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Environment</a>
+									<span class="text-category">Unknown</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>	
+					
+					
+					<div class="portfolio all gnd" data-cat="gnd">
+						<div class="portfolio-wrapper" onClick="getImage('img16')">			
+							<img id="img16" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535981088/NamibLeadZinc/groundbreaking/5F2A9568.jpg" alt="Unknown" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Groundbreaking</a>
+									<span class="text-category">Unknown</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>	
+					<div class="portfolio all gnd" data-cat="gnd">
+						<div class="portfolio-wrapper" onClick="getImage('img17')">			
+							<img id="img17" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535981094/NamibLeadZinc/groundbreaking/5F2A9607.jpg" alt="Unknown" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Groundbreaking</a>
+									<span class="text-category">Unknown</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>	
+					<div class="portfolio all gnd" data-cat="gnd">
+						<div class="portfolio-wrapper" onClick="getImage('img18')">			
+							<img id="img18" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535981094/NamibLeadZinc/groundbreaking/5F2A9679.jpg" alt="Unknown" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Groundbreaking</a>
+									<span class="text-category">Unknown</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>	
+					<div class="portfolio all gnd" data-cat="gnd">
+						<div class="portfolio-wrapper" onClick="getImage('img19')">			
+							<img id="img19" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535981095/NamibLeadZinc/groundbreaking/5F2A9717.jpg" alt="Unknown" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Groundbreaking</a>
+									<span class="text-category">Unknown</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>	
+					<div class="portfolio all gnd" data-cat="gnd">
+						<div class="portfolio-wrapper" onClick="getImage('img20')">			
+							<img id="img20" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535981095/NamibLeadZinc/groundbreaking/5F2A9689.jpg" alt="Unknown" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Groundbreaking</a>
+									<span class="text-category">Unknown</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>						
+					<div class="portfolio all gnd" data-cat="gnd">
+						<div class="portfolio-wrapper" onClick="getImage('img21')">			
+							<img id="img21" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535981096/NamibLeadZinc/groundbreaking/5F2A9637.jpg" alt="Unknown" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Groundbreaking</a>
+									<span class="text-category">Unknown</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>						
+					<div class="portfolio all gnd" data-cat="gnd">
+						<div class="portfolio-wrapper" onClick="getImage('img22')">			
+							<img id="img22" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535981097/NamibLeadZinc/groundbreaking/5F2A9521.jpg" alt="Unknown" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Groundbreaking</a>
+									<span class="text-category">Unknown</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>	
+					<div class="portfolio all gnd" data-cat="gnd">
+						<div class="portfolio-wrapper" onClick="getImage('img23')">			
+							<img id="img23" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535981098/NamibLeadZinc/groundbreaking/5F2A9543.jpg" alt="Unknown" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Groundbreaking</a>
+									<span class="text-category">Unknown</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>	
+					
+					<div class="portfolio all gnd" data-cat="gnd">
+						<div class="portfolio-wrapper" onClick="getImage('img24')">			
+							<img id="img24" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535981098/NamibLeadZinc/groundbreaking/5F2A9549.jpg" alt="Unknown" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Groundbreaking</a>
+									<span class="text-category">Unknown</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>	
+					<div class="portfolio all gnd" data-cat="gnd">
+						<div class="portfolio-wrapper" onClick="getImage('img25')">			
+							<img id="img25" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535981092/NamibLeadZinc/groundbreaking/5F2A9610.jpg" alt="Unknown" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Groundbreaking</a>
+									<span class="text-category">Unknown</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>	
+					<div class="portfolio all gnd" data-cat="gnd">
+						<div class="portfolio-wrapper" onClick="getImage('img26')">			
+							<img id="img26" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535981091/NamibLeadZinc/groundbreaking/5F2A9493.jpg" alt="Unknown" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Groundbreaking</a>
+									<span class="text-category">Unknown</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>	
+					<div class="portfolio all gnd" data-cat="gnd">
+						<div class="portfolio-wrapper" onClick="getImage('img27')">			
+							<img id="img27" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535981089/NamibLeadZinc/groundbreaking/5F2A9405.jpg" alt="Unknown" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Groundbreaking</a>
+									<span class="text-category">Unknown</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>	
+					
+					<div class="portfolio all gnd" data-cat="gnd">
+						<div class="portfolio-wrapper" onClick="getImage('img28')">			
+							<img id="img28" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535981089/NamibLeadZinc/groundbreaking/5F2A9577.jpg" alt="Unknown" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Groundbreaking</a>
+									<span class="text-category">Unknown</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>	
+					<div class="portfolio all gnd" data-cat="gnd">
+						<div class="portfolio-wrapper" onClick="getImage('img29')">			
+							<img id="img29" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535981092/NamibLeadZinc/groundbreaking/5F2A9599.jpg" alt="Unknown" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Groundbreaking</a>
+									<span class="text-category">Unknown</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>	
+					<div class="portfolio all gnd" data-cat="gnd">
+						<div class="portfolio-wrapper" onClick="getImage('img30')">			
+							<img id="img30" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535981088/NamibLeadZinc/groundbreaking/5F2A9441.jpg" alt="Unknown" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Groundbreaking</a>
+									<span class="text-category">Unknown</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>	
+					<div class="portfolio all gnd" data-cat="gnd">
+						<div class="portfolio-wrapper" onClick="getImage('img31')">			
+							<img id="img31" src="https://res.cloudinary.com/df86hydz3/image/upload/c_fill,h_350,w_526/v1535981093/NamibLeadZinc/groundbreaking/5F2A9503.jpg" alt="Unknown" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title">Groundbreaking</a>
+									<span class="text-category">Unknown</span>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>	
+					
+				</div>
+			</div>
+		</div>
+
+        </div>
+    </div> 
+	
+	
+	
+	<!-- -->
+	
+
+	<!-- -->
+	
+	
+
+	<div class="footer">
+    	<div class="container max-width-910">
+            <div class="row">
+                <div class="col-sm-12 col-sm-4 col-md-4 col-lg-4">
+                    <figure class="f-logo"><a href="index.html"><img src="images/logo-footer.svg" alt="Namib Lead & Zinc Mining" title="Namib Lead & Zinc Mining"/></a></figure>
+                    <figure class="f-logo1"><a href="#"><img src="images/north-river.svg" alt="North River RESOURCES" title="North River RESOURCES"/></a></figure>
+                </div>                
+                <div class="col">
+                    <div class="fnav">
+                        <h5>OVERVIEW</h5>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="board.html">Board & Management</a></li>
+                            <li><a href="operations.html">Operations</a></li>
+                            <li><a href="ownership.html">Ownership</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+							<li><a href="recruitment.html">Recruitment</a></li>
+							<li><a href="tenders.html">Tenders</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>                
+                <div class="col">
+                    <div class="fnav">
+                        <h5>ARCHIVE</h5>
+                        <ul>
+                            <li><a href="http://www.northriverresources.com/news.aspx" target="_blank">News</a></li>
+                            <li><a href="http://www.northriverresources.com" target="_blank">Corporate Profile</a></li>
+                            <li><a href="http://www.northriverresources.com/gallery.aspx" target="_blank">Media</a></li>
+                            <li><a href="ownership.html">Shareholder Info</a></li>
+                        </ul>
+                    </div>
+                </div>                
+                <div class="col">
+                    <div class="fnav">
+                        <h5>CONTACT US</h5>
+                            <div class="reach-us"><span>T</span>+264 64 426 250</div>
+                            <div class="reach-us"><span>F</span>+264 64 426 251</div>
+                            <div class="reach-us" style="display: inline-flex"><span>E</span><a href="info@namibleadzinc.com">info@namibleadzinc.com</a></div>
+                            <div class="address">
+                                No. 6 Francois Street<br>
+                                Swakopmund<br>
+                                P.O. Box 7185<br>
+                                Swakopmund<br>
+                                Namibia<br>
+                            </div>
+                    </div>
+                </div>                
+            </div>
+  		</div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Portfolio Filter Mixitup -->
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+	
+    <script>
+		lightbox.option({
+			 'resizeDuration': 200,
+			'disableScrolling': false
+		})
+	</script>
+    <script>
+		window.onscroll = function() {myFunction()};	
+		var header = document.getElementById("myHeader");
+		var sticky = header.offsetTop;		
+		function myFunction() {
+		  if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+		  } else {
+			header.classList.remove("sticky");
+		  }
+		}
+	</script>
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixItUp({
+  				selectors: {
+    			  target: '.portfolio',
+    			  filter: '.filter'	
+    		  },
+    		  load: {
+      		  filter: '.gen'  
+      		}     
+				});								
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+
+		
+		
+	});	
+	</script>
+	
+
+	<script>
+		
+	function getImage(id){
+		var modal = document.getElementById('myModal');
+		var img = document.getElementById(id);
+		var modalImg = document.getElementById("img01");
+		var updatedSrc = img.src.replace("c_fill,h_350,w_526/", "c_limit,w_1200/");
+		
+		var captionText = document.getElementById("caption");
+		
+		modal.style.display = "block";
+		modalImg.src = updatedSrc;
+		captionText.innerHTML = img.alt;
+	}	
+		
+	function closeModal(){
+		var modal = document.getElementById('myModal');
+		modal.style.display = "none";
+	}	
+//
+//	// Get the <span> element that closes the modal
+//	var span = document.getElementsByClassName("close")[0];
+//		alert(span);
+//		
+//		var span2 = document.getElementsByClassName("close");
+//		alert(span2);
+//
+//	// When the user clicks on <span> (x), close the modal
+//	span.onclick = function() { 
+//		modal.style.display = "none";
+//	}
+	</script>
+
+  </body>
+</html>

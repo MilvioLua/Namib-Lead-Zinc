@@ -1,0 +1,88 @@
+a,abbr,acronym,address,applet,article,aside,
+audio,b,blockquote,big,body,center,canvas,
+caption,cite,code,command,datalist,dd,del,details,
+dfn,dl,div,dt,em,embed,fieldset,figcaption,figure,
+font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,
+html,i,iframe,img,ins,kbd,keygen,label,legend,li,
+meter,nav,object,ol,output,p,pre,progress,q,s,samp,
+section,small,span,source,strike,strong,sub,sup{
+	outline:0;
+	vertical-align:baseline;
+}
+
+figure {
+	display: block;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	padding:0px;
+	margin:0px;
+}
+p {
+	display: block;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+p {
+	padding:0px;
+	margin:0px;
+}
+h1 {
+	padding:0px;
+	margin:0px;
+}
+h2 {
+	padding:0px;
+	margin:0px;
+}
+h3 {
+	padding:0px;
+	margin:0px;
+}
+h4 {
+	padding:0px;
+	margin:0px;
+}
+
+ul , h4{
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0px;
+}
+
+ul ul{
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0px;
+}
+
+ol {
+	display: block;
+	list-style-type: decimal;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0px;
+}
+img ,a img{ vertical-align:middle;}
+a img{ border:0px;}
+
+
+body a{outline:0}
+body a:active{outline:0}
+body a:focus{-mos-outline-style:none;outline:0}
+body:-moz-any-link:focus{outline:0}
+:focus{outline:0}
+::-moz-selection{background:#000;color:#fff}
+::selection{background:#000;color:#fff}
+input[type=text]:focus{outline:0 none}
+textarea:focus{outline:0 none}
+article,aside,dialog,figure,footer,header,hgroup,section{display:block}
