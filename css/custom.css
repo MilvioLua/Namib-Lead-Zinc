@@ -70,8 +70,8 @@ html, body{height:100%; font-family:'Roboto'; font-size:14px; color:#000000; fon
 .group-heading{float:left; width:100%; text-align:right;}
 .group-heading h3{font-size:40px; font-weight:100;}
 .group-heading h4{font-size:50px; color:#009ee0; font-weight:500;}
-.develop-img{float:left; width:100%; position:absolute; top:42%; margin-left:1%;}
-.latest-news{float:left; width:100%; background:url(../images/news-bg.png) repeat-x left top; padding:30px 0px; margin-top:40px;}
+.develop-img{float:left; width:100%; top:42%; margin-left:1%;}
+.latest-news{float:left; width:100%; background:url(../images/news-bg.png) repeat-x left top; padding:30px 0px; margin-top:100px;}
 .latest-news h2{color:#FFFFFF;}
 .news-inner{float:left; width:100%;}
 .news-main{float:left; width:100%; margin-top:1rem;}
